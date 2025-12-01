@@ -1,50 +1,51 @@
-# React Todo App with API (complete)
+✅ To-Do App (React & TypeScript)
+Project Overview
+This is a modern Single Page Application (SPA) designed for effective task management. The project is built using React and TypeScript to ensure robust, scalable, and type-safe code.
 
-It is the third part of the React Todo App with API.
+The main goals of this application are to demonstrate proficiency in:
 
-Take your code implemented for [Add and Delete](https://github.com/mate-academy/react_todo-app-add-and-delete)
-and implement the ability to toggle and rename todos.
+Advanced State Management using React Hooks and the Context API.
+Enforcing code reliability and predictability using TypeScript.
+Creating a highly responsive and dynamic user interface.
+🔗 Live Preview
+View the deployed version of the project:
 
-> Here is [the working example](https://mate-academy.github.io/react_todo-app-with-api/)
+[Live Demo: To-Do App](https://maevalar.github.io/todo-app/)
+✨ Key Features
+CRUD Operations: Full functionality to Create, Read, Update (toggle status), and Delete tasks.
+Filtering: Users can filter tasks by status (All, Active, Completed).
+State Management: Efficient and predictable state handling achieved using built-in React Hooks and the Context API.
+Persistence: Tasks remain in the list even after the page is refreshed, thanks to local storage integration.
+Type Safety: The entire application is strictly typed using TypeScript, minimizing runtime errors and improving code quality.
+Responsive Design: Optimized for all screen sizes (mobile, tablet, and desktop).
+🛠️ Technologies Used
+Category	Technology	Purpose
+Core	React	Building the user interface components.
+TypeScript	Ensuring type safety and enhancing code quality.
+State Management	Context API / Hooks	Decentralized and efficient state management for global state.
+Styling	SCSS	Modular and efficient styling using a preprocessor.
+Build Tool	Vite	Fast development server and production build bundling.
+Quality	ESLint / Stylelint	Code quality and standard enforcement.
+📦 Getting Started
+Prerequisites
+Make sure you have installed:
 
-## Toggling a todo status
+Node.js
+Git
+Installation
+Clone the repository:
 
-Toggle the `completed` status on `TodoStatus` change:
-- Install Prettier Extention and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
-- covered the todo with a loader overlay while waiting for API response;
-- the status should be changed on success;
-- show the `Unable to update a todo` notification in case of API error.
+git clone https://github.com/Maevalar/todo-app.git
+Navigate into the project directory:
 
-Add the ability to toggle the completed status of all the todos with the `toggleAll` checkbox:
+cd todo-app_react_typescript
+Install dependencies:
 
-- `toggleAll` button should have `active` class only if all the todos are completed;
-- `toggleAll` click changes its status to the opposite one, and sets this new status to all the todos;
-- it should work the same as several individual updates of the todos which statuses were actually changed;
-- don't send requests for the todos that were not changed;
+npm install
+Run the project locally:
 
-## Renaming a todo
-
-Implement the ability to edit a todo title on double click:
-
-- show the edit form instead of the title and remove button;
-- saves changes on the form submit (just press `Enter`);
-- save changes when the field loses focus (`onBlur`);
-- if the new title is the same as the old one just cancel editing;
-- cancel editing on `Esс` key `keyup` event;
-- if the new title is empty delete the todo the same way the `x` button does it;
-- if the title was changed show the loader while waiting for the API response;
-- update the todo title on success;
-- show `Unable to update a todo` in case of API error;
-- or the deletion error message if we tried to delete the todo.
-
-## If you want to enable tests
-- open `cypress/integration/page.spec.js`
-- replace `describe.skip` with `describe` for the root `describe`
-
-> ❗❗All tests should pass, even if some behaviour is not well explained in the task❗❗
-
-## Instructions
-
-- Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline).
-- Use the [React TypeScript cheat sheet](https://mate-academy.github.io/fe-program/js/extra/react-typescript).
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://Maevalar.github.io/react_todo-app-with-api/) and add it to the PR description.
+npm start
+👤 Author
+Name: Ivan Kolesnyk
+GitHub: https://github.com/Maevalar
+LinkedIn: [LinkedIn Link](https://www.linkedin.com/in/ivan-kolesnyk-68626338a/)
